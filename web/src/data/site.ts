@@ -4,7 +4,6 @@ export const NAV_LINKS: readonly NavLink[] = [
   { label: "Products", href: "#ventures" },
   { label: "Services", href: "#what-we-do" },
   { label: "About", href: "#mission" },
-  { label: "Careers", href: "#contact" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
