@@ -1,7 +1,6 @@
 import { Container } from "../components/ui/Container.tsx";
 import { Button } from "../components/ui/Button.tsx";
 import { HeroScene } from "../components/art/HeroScene.tsx";
-
 export function Hero() {
   return (
     <section

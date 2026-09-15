@@ -1,8 +1,8 @@
 /**
  * Hero backdrop.
  *
- * Every silhouette below was traced from the design mockup's own render
- * (`site mockup.png`): the ridge lines are the mockup's skyline, thresholded per
+ * Every silhouette below was traced from the original design mockup render:
+ * the ridge lines are the mockup's skyline, thresholded per
  * depth layer and resampled with Ramer-Douglas-Peucker into SVG path data. Snow
  * gullies and rim light are derived from the traced summits, so the shading
  * follows the real rock. Nothing here is a raster asset, which keeps the hero's
