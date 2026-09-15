@@ -4,3 +4,6 @@ dist
 .dev.vars
 *.local
 .DS_Store
+
+# bun is the package manager here; ignore stray npm lockfiles.
+package-lock.json
