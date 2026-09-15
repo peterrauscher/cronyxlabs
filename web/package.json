@@ -1,0 +1,29 @@
+{
+  "name": "cronyx-labs-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "tsc --noEmit",
+    "deploy": "vite build && wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.2.5",
+    "@fontsource-variable/outfit": "^5.2.5",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.2",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5",
+    "wrangler": "^4.38.0"
+  }
+}

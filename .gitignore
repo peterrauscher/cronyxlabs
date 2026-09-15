@@ -1,0 +1,12 @@
+# Local agent harness — skills are provisioned per machine, not versioned here.
+.agents/
+skills-lock.json
+
+# Secrets — never commit. Skills ship a .env.example instead.
+.env
+.env.*
+!.env.example
+
+# OS / editor cruft
+.DS_Store
+*.swp
