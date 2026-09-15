@@ -23,9 +23,10 @@ export function Mission() {
             </h2>
 
             <p className="body-sm mt-6 max-w-[405px] text-muted">
-              We’re not just building products — we’re building a better future. By combining
-              technology, creativity, and capital, we create tools and companies that make life
-              easier, work more meaningful, and open up new possibilities.
+              Software should be built as enduring architecture, not disposable ephemera.
+              We exist to design, acquire, and compound technology that solves fundamental
+              problems with permanence—aligning patient capital, rigorous engineering,
+              and generational stewardship.
             </p>
 
             <div className="mt-12 w-24 border-t border-line" />
@@ -49,9 +50,9 @@ export function Mission() {
               {/* Right-aligned mono motto */}
               <div className="absolute right-7 top-7 text-right">
                 <p className="eyebrow tracking-[0.18em] text-white/90">
-                  BETTER TOOLS.
+                  ENGINEERED TO ENDURE.
                   <br />
-                  BIGGER POSSIBILITIES.
+                  COMPOUNDED OVER TIME.
                 </p>
               </div>
             </div>

@@ -93,23 +93,23 @@ function CapitalDistributionIcon({ className }: { className?: string } = {}) {
 
 const ADVANTAGES = [
   {
-    title: "Technical depth",
-    description: "Modern stacks, real-world systems.",
+    title: "Architectural depth",
+    description: "Resilient systems built on enduring primitives rather than transient hype cycles.",
     icon: TechnicalDepthIcon,
   },
   {
-    title: "Product focus",
-    description: "Users, not just features.",
+    title: "Essential utility",
+    description: "Ruthless focus on core utility, tactile craftsmanship, and software users rely on daily.",
     icon: ProductFocusIcon,
   },
   {
-    title: "Long-term thinking",
-    description: "Compounding value, not short-term wins.",
+    title: "Decade-long horizon",
+    description: "Free from artificial fund clocks. We measure compounding over decades, not quarterly benchmarks.",
     icon: LongTermThinkingIcon,
   },
   {
-    title: "Capital & distribution",
-    description: "Backing great ideas beyond the build.",
+    title: "Sovereign compounding",
+    description: "Retained earnings are reinvested directly into internal R&D, shared infrastructure, and enduring assets.",
     icon: CapitalDistributionIcon,
   },
 ] as const;
@@ -138,9 +138,10 @@ export function Advantage() {
             <br />
             A compounding engine.
           </h2>
-          <p className="body-lg mt-6 max-w-[470px] text-night-muted">
-            We combine deep technical expertise, product discipline, and a long-term
-            mindset to build and scale what matters.
+          <p className="body-lg mt-6 max-w-[480px] text-night-muted">
+            We reject the venture treadmill of forced liquidations and artificial timelines.
+            By pairing permanent capital with relentless engineering discipline, we compound
+            technical capabilities and enterprise value across decades.
           </p>
         </div>
 

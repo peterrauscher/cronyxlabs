@@ -16,19 +16,19 @@ const CONTACT_RAIL_ITEMS: readonly ContactRailItem[] = [
   {
     index: "01",
     title: "Build",
-    subtitle: "Products & software",
+    subtitle: "Autonomous software & AI",
     href: "#ventures",
   },
   {
     index: "02",
     title: "Partner",
-    subtitle: "Technology & AI",
+    subtitle: "Venture co-creation",
     href: "#ventures",
   },
   {
     index: "03",
     title: "Compound",
-    subtitle: "Capital & growth",
+    subtitle: "Permanent capital & scale",
     href: "#ventures",
   },
 ] as const;
@@ -57,17 +57,18 @@ export function Contact() {
             <Eyebrow tone="light">LET’S BUILD WHAT’S NEXT</Eyebrow>
             <h2
               id="contact-title"
-              className="display-4 mt-5 max-w-[370px] text-night-text"
+              className="display-4 mt-5 max-w-[380px] text-night-text"
             >
-              Ideas, products, and businesses
+              Ideas, technology, and enterprises
               <span className="text-night-text/70">
                 {" "}
-                for a more capable future.
+                built to outlast market cycles.
               </span>
             </h2>
             <p className="body-sm mt-5 max-w-[400px] text-night-muted">
-              We’re always exploring new opportunities — from new products to
-              strategic partnerships.
+              Whether you are a founder seeking a permanent home for your software,
+              an enterprise deploying frontier AI, or a builder drawn to hard
+              problems—we invite the conversation.
             </p>
             <Button
               href="mailto:hello@cronyxlabs.com"

@@ -97,16 +97,24 @@ function IconOperate() {
 }
 
 const ITEMS = [
-  { title: "Build", copy: "Products, software, and AI solutions.", Icon: IconBuild },
-  { title: "Partner", copy: "Technology and AI for ambitious companies.", Icon: IconPartner },
+  {
+    title: "Build",
+    copy: "Native software, platform protocols, and autonomous AI systems.",
+    Icon: IconBuild,
+  },
+  {
+    title: "Partner",
+    copy: "High-conviction venture co-creation with technical founders.",
+    Icon: IconPartner,
+  },
   {
     title: "Compound",
-    copy: "Capital, knowledge, and distribution across our portfolio.",
+    copy: "Reinvested capital, shared infrastructure, and unified distribution.",
     Icon: IconCompound,
   },
   {
     title: "Operate",
-    copy: "We run and scale our own businesses, from concept to market.",
+    copy: "Permanent stewardship and operational autonomy without fund clocks.",
     Icon: IconOperate,
   },
 ];
@@ -134,7 +142,7 @@ export function WhatWeDo() {
               <h3 className="mt-6 text-[1.5rem] font-medium tracking-[-0.01em] text-ink">
                 {title}
               </h3>
-              <p className="body-sm mt-4 max-w-[190px] text-muted">{copy}</p>
+              <p className="body-sm mt-4 max-w-[220px] text-muted">{copy}</p>
             </div>
           ))}
         </div>

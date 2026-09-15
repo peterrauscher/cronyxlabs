@@ -1,5 +1,4 @@
 import { Container } from "../components/ui/Container.tsx";
-import { Eyebrow } from "../components/ui/Eyebrow.tsx";
 import { Button } from "../components/ui/Button.tsx";
 import { HeroScene } from "../components/art/HeroScene.tsx";
 
@@ -25,23 +24,22 @@ export function Hero() {
       {/* Copy column */}
       <Container>
         <div className="animate-rise max-w-[640px] pt-[118px] pb-[132px] lg:pt-[128px]">
-          <Eyebrow>INDEPENDENT TECHNOLOGY COMPANY</Eyebrow>
-
-          <h1 id="hero-title" className="display-1 mt-7 text-ink">
+          <h1 id="hero-title" className="display-1 text-ink">
             We build <br className="hidden lg:block" />
             technology with <br className="hidden lg:block" />
             a long horizon.
           </h1>
 
-          <p className="body-lg mt-7 max-w-[360px] text-muted">
-            Cronyx Labs is a holding company for digital products, software, AI, and
-            services. We invest in and build companies that create lasting value.
+          <p className="body-lg mt-7 max-w-[400px] text-muted">
+            Cronyx Labs is an independent technology holding company. We architect,
+            acquire, and compound category-defining software and intelligent systems
+            engineered to outlast market cycles.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
             <Button href="#ventures">Our portfolio</Button>
             <Button href="#mission" variant="outline">
-              About us
+              Our philosophy
             </Button>
           </div>
         </div>

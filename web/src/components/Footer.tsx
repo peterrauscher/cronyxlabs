@@ -50,7 +50,7 @@ export function Footer() {
               ))}
             </div>
             <p className="mt-2.5 text-[0.6875rem] text-night-faint">
-              © 2025 Cronyx Labs. All rights reserved.
+              © 2026 Cronyx Labs. All rights reserved.
             </p>
           </div>
         </div>

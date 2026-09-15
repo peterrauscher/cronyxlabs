@@ -1,6 +1,6 @@
 # Cronyx Labs Web
 
-Single-page static marketing site for Cronyx Labs, an independent technology holding company for digital products, software, AI, and services. Built for fast loading, zero raster image dependencies, and deployment on Cloudflare Pages.
+Single-page static marketing site for Cronyx Labs, an independent technology holding company architecting, acquiring, and compounding category-defining software and AI systems. Built for fast loading, zero raster image dependencies, and deployment on Cloudflare Pages.
 
 ## Stack
 
