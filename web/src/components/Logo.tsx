@@ -1,8 +1,8 @@
 import { cn } from "../lib/cn.ts";
 
 /**
- * Cronyx Labs mark: a solid planet disc crossed by an orbital ring, with the
- * wordmark set in wide-tracked sans.
+ * Cronyx Labs official mark: the hexagonal C-L emblem paired with the
+ * Cronyx Labs wordmark.
  */
 export function Logo({
   tone = "dark",
@@ -12,8 +12,7 @@ export function Logo({
   tone?: "dark" | "light";
   className?: string;
 }) {
-  const disc = tone === "dark" ? "var(--color-ink)" : "var(--color-cream)";
-  const cut = tone === "dark" ? "var(--color-cream)" : "var(--color-night)";
+  const colorClass = tone === "dark" ? "text-ink" : "text-night-text";
 
   return (
     <a
@@ -24,29 +23,25 @@ export function Logo({
         className,
       )}
     >
-      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false" className="h-8 w-8 shrink-0">
-        <circle cx="16" cy="16" r="15" fill={disc} />
-        <g transform="rotate(-28 16 16)">
-          <ellipse
-            cx="16"
-            cy="16"
-            rx="13.5"
-            ry="5.4"
-            fill="none"
-            stroke={cut}
-            strokeWidth="1.9"
-            opacity="0.95"
-          />
-          <circle cx="16" cy="16" r="3.9" fill={cut} />
+      <svg
+        viewBox="177.68 0 524.78 524.74"
+        aria-hidden="true"
+        focusable="false"
+        className={cn("h-7 w-7 shrink-0", colorClass)}
+        fill="currentColor"
+      >
+        <g transform="translate(-179.123206,993.545855) scale(0.100000,-0.100000)">
+          <path d="M6141 9925 c-94 -22 -126 -40 -1391 -764 -283 -162 -544 -311 -579 -330 -133 -75 -243 -225 -271 -370 -6 -34 -10 -462 -10 -1180 0 -1241 -3 -1176 63 -1309 67 -137 83 -148 787 -549 349 -199 741 -424 870 -498 212 -123 239 -135 273 -131 47 5 74 28 88 75 6 23 9 210 7 530 l-3 495 -235 132 c-321 181 -324 183 -388 236 -148 126 -246 306 -272 501 -8 54 -10 222 -8 478 4 368 6 399 26 473 37 135 131 287 238 386 76 71 108 92 284 193 91 52 253 145 360 207 107 62 312 180 455 263 143 82 319 184 391 226 73 42 238 137 368 211 129 74 236 140 236 145 0 9 -138 89 -799 462 -80 46 -175 92 -211 103 -86 28 -198 33 -279 15z" />
+          <path d="M6880 8047 c-372 -213 -428 -249 -457 -288 -67 -90 -63 -1 -63 -1512 0 -1514 -4 -1419 63 -1450 23 -10 107 -18 287 -27 243 -12 258 -12 310 7 30 10 201 103 380 205 179 103 494 283 700 401 206 119 394 232 417 252 77 66 151 258 124 323 -7 16 -22 34 -34 41 -15 7 -180 12 -542 13 -505 3 -521 4 -566 24 -63 30 -116 79 -147 138 l-27 51 -3 1033 c-1 567 -6 1032 -10 1032 -4 0 -198 -109 -432 -243z" />
         </g>
       </svg>
       <span
         className={cn(
-          "text-[0.9375rem] font-semibold tracking-[0.18em] whitespace-nowrap",
-          tone === "dark" ? "text-ink" : "text-night-text",
+          "text-[1.0625rem] font-semibold tracking-[-0.015em] whitespace-nowrap",
+          colorClass,
         )}
       >
-        CRONYX LABS
+        Cronyx Labs
       </span>
     </a>
   );
