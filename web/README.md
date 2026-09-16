@@ -60,6 +60,18 @@ src/
 
 All colour palettes, font families, and motion easing curves live in the `@theme` block of `src/index.css`. They are consumed throughout the application as standard Tailwind utility classes (such as `bg-cream`, `text-ink`, `border-line`, `text-night-muted`, `font-sans`, and `font-mono`).
 
+## Crawler and agent discoverability
+
+The page is client-rendered, so the HTML a non-executing crawler receives contains only `<div id="root">` — the copy is injected by JavaScript. Google renders JS, most AI crawlers do not. Everything below exists to close that gap.
+
+- `public/robots.txt` — fully permissive (`Allow: /`) and carries a `Content-signal` line granting `search`, `ai-input`, and `ai-train`, so scrapers and model trainers have an explicit machine-readable grant rather than an inferred one.
+- `public/llms.txt` — [llms.txt](https://llmstxt.org/) file: the required H1 plus summary, followed by H2 URL lists pointing at the Markdown content below. Read on demand by agents rather than by ranking crawlers.
+- `public/index.md` — the whole page as Markdown, served at the page URL with the extension replaced by `.md` as the llms.txt spec recommends. This is the readable copy of the site for anything that does not execute JavaScript.
+- `index.html` declares `rel="describedby"` → `/llms.txt` and `rel="alternate" type="text/markdown"` → `/index.md`.
+- `public/_headers` sets explicit `Content-Type` for the two files above, since they are not covered by the extension-to-MIME defaults the rest of the site relies on.
+
+Note that a Cloudflare managed `robots.txt` (dashboard: **Security → Settings → Bot traffic → Set your preference to block training in robots.txt**) is *prepended* to the origin file, and its default block disallows GPTBot, ClaudeBot, CCBot, Google-Extended, Bytespider, and others. If that toggle is on, it overrides the grant in `public/robots.txt`.
+
 ## Deploying to Cloudflare Pages
 
 The site can be deployed to Cloudflare Pages using either of two methods:
@@ -72,7 +84,7 @@ The site can be deployed to Cloudflare Pages using either of two methods:
    - **Build command**: `bun run build`
    - **Build output directory**: `dist`
 
-`wrangler.toml` declares `pages_build_output_dir = "dist"`, and static files in `public/` (including `public/_headers`, `robots.txt`, and `sitemap.xml`) are copied into `dist` during the build and published as part of the deployment.
+`wrangler.toml` declares `pages_build_output_dir = "dist"`. Static files in `public/` (such as `_headers` and `robots.txt`) are copied into `dist` during the build, while `sitemap.xml` is automatically generated at build time by `vite-plugin-sitemap` with the latest build timestamp and injected into `dist/sitemap.xml` (as well as linked in `dist/index.html`).
 
 ## Performance notes
 
