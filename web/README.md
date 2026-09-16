@@ -1,10 +1,10 @@
 # Cronyx Labs Web
 
-Single-page static marketing site for Cronyx Labs, an independent technology holding company architecting, acquiring, and compounding category-defining software and AI systems. Built for fast loading, zero raster image dependencies, and deployment on Cloudflare Pages.
+Single-page static marketing site for Cronyx Labs, an independent technology holding company architecting, acquiring, and compounding category-defining software and AI systems. Built with build-time prerendering (SSG) for instant paint, complete crawler discoverability, zero raster image dependencies, and deployment on Cloudflare Pages.
 
 ## Stack
 
-- **React 19** and **TypeScript** (strict mode)
+- **React 19** and **TypeScript** (strict mode) with build-time prerendering (SSG) and client-side hydration
 - **Vite 7** for development and production bundling
 - **Tailwind CSS v4** using CSS-first `@theme` configuration in `src/index.css` (no `tailwind.config.js`)
 - **Self-hosted variable fonts** via `@fontsource-variable` (`@fontsource-variable/outfit` and `@fontsource-variable/jetbrains-mono`)
@@ -62,8 +62,9 @@ All colour palettes, font families, and motion easing curves live in the `@theme
 
 ## Crawler and agent discoverability
 
-The page is client-rendered, so the HTML a non-executing crawler receives contains only `<div id="root">` — the copy is injected by JavaScript. Google renders JS, most AI crawlers do not. Everything below exists to close that gap.
+The page is statically prerendered at build time (SSG) with client hydration. The emitted HTML payload in `dist/index.html` contains the full semantic DOM tree (`<h1>`, sections, venture blurbs, vector artwork, and links), so non-executing crawlers, search engine indexers, social unfurlers, and reader modes receive complete content on the initial HTTP response without executing JavaScript.
 
+In addition:
 - `public/robots.txt` — fully permissive (`Allow: /`) and carries a `Content-signal` line granting `search`, `ai-input`, and `ai-train`, so scrapers and model trainers have an explicit machine-readable grant rather than an inferred one.
 - `public/llms.txt` — [llms.txt](https://llmstxt.org/) file: the required H1 plus summary, followed by H2 URL lists pointing at the Markdown content below. Read on demand by agents rather than by ranking crawlers.
 - `public/index.md` — the whole page as Markdown, served at the page URL with the extension replaced by `.md` as the llms.txt spec recommends. This is the readable copy of the site for anything that does not execute JavaScript.
