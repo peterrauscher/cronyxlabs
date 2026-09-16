@@ -1,4 +1,22 @@
+# Content signals — conditions for accessing this site.
+#
+# (a) If a content-signal = yes, you may collect content for that use.
+# (b) If a content-signal = no, you may not collect content for that use.
+# (c) If no content-signal is given for a use, that use is neither granted
+#     nor restricted by these signals.
+#
+# search:   building a search index and providing search results (returning
+#           hyperlinks and short excerpts). Does not include AI-generated
+#           search summaries.
+# ai-input: inputting content into AI models for real-time use, such as
+#           retrieval-augmented generation, grounding, or AI search answers.
+# ai-train: training or fine-tuning AI models.
+# use=full: what may be kept after access — summarise and reproduce.
+#
+# Cronyx Labs grants all of the above. Nothing on this site is disallowed.
+
 User-agent: *
+Content-signal: search=yes, ai-input=yes, ai-train=yes, use=full
 Allow: /
 
 Sitemap: https://cronyxlabs.com/sitemap.xml

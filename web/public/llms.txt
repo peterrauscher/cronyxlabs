@@ -1,0 +1,28 @@
+# Cronyx Labs
+
+> Cronyx Labs is an independent technology holding company. We architect, acquire, and compound category-defining software and intelligent systems engineered to outlast market cycles.
+
+Cronyx Labs pairs permanent capital with engineering discipline: no fund clocks, no forced
+liquidations. Retained earnings are reinvested into internal R&D, shared infrastructure, and
+enduring assets, and the company measures compounding over decades rather than quarterly
+benchmarks.
+
+- Site: https://cronyxlabs.com/ (a single page; section anchors are listed below)
+- Email: hello@cronyxlabs.com
+- Full page content in Markdown: https://cronyxlabs.com/index.md
+- Reuse: crawling, indexing, retrieval-augmented generation, and AI training are all permitted. The machine-readable grant is in https://cronyxlabs.com/robots.txt
+
+## Site content
+
+- [Cronyx Labs, complete page in Markdown](https://cronyxlabs.com/index.md): Every section of the site as clean Markdown. Prefer this over the HTML page, which is a client-rendered React app whose copy is not present in the served HTML.
+- [What we do](https://cronyxlabs.com/index.md#what-we-do): The four-capability model — Build, Partner, Compound, Operate.
+- [Our ventures](https://cronyxlabs.com/index.md#our-ventures): Helix, Tessera, Orbit, Forge, and Nexus, each with its category and a one-sentence description.
+- [The Cronyx advantage](https://cronyxlabs.com/index.md#the-cronyx-advantage): Architectural depth, essential utility, decade-long horizon, sovereign compounding.
+- [Our mission](https://cronyxlabs.com/index.md#our-mission): Build useful things that outlast us.
+- [Contact](https://cronyxlabs.com/index.md#contact): Enquiries for founders, enterprises, and builders.
+
+## Optional
+
+- [LinkedIn](https://www.linkedin.com/company/cronyx-labs)
+- [X](https://x.com/cronyxlabs)
+- [GitHub](https://github.com/cronyxlabs)
