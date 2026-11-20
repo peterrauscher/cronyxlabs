@@ -7,7 +7,6 @@ export function Hero() {
       aria-labelledby="hero-title"
       className="relative isolate min-h-[600px] sm:min-h-[700px] overflow-hidden"
     >
-      {/* Background vector scene */}
       <HeroScene className="pointer-events-none absolute inset-0 -z-10 h-full w-full select-none" />
 
       {/* Legibility scrims: top-to-bottom on mobile, left-to-right on desktop */}
@@ -20,7 +19,6 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      {/* Copy column */}
       <Container>
         <div className="animate-rise max-w-[640px] pt-[118px] pb-[132px] lg:pt-[128px]">
           <h1 id="hero-title" className="display-1 text-ink">
