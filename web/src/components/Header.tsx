@@ -66,7 +66,6 @@ export function Header() {
         <Container className="flex h-full items-center justify-between">
           <Logo />
 
-          {/* Desktop navigation */}
           <nav aria-label="Primary" className="hidden md:flex items-center gap-8 lg:gap-10">
             {NAV_LINKS.map((link) => (
               <a
@@ -79,7 +78,6 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Mobile hamburger button */}
           <button
             type="button"
             aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -122,7 +120,6 @@ export function Header() {
         </Container>
       </header>
 
-      {/* Mobile nav panel */}
       {isOpen && (
         <div
           id="mobile-nav-panel"

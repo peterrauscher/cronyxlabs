@@ -47,12 +47,10 @@ export function Contact() {
     >
       <Container>
         <div className="grid grid-cols-1 items-start gap-14 lg:grid-cols-[minmax(0,0.30fr)_minmax(0,0.38fr)_minmax(0,0.32fr)] lg:gap-10">
-          {/* Column 1: Orbit planet illustration */}
           <div className="mx-auto aspect-square w-full max-w-[300px] pointer-events-none select-none lg:mx-0">
             <OrbitScene />
           </div>
 
-          {/* Column 2: Headline, lead paragraph, and email button */}
           <div>
             <Eyebrow tone="light">LET’S BUILD WHAT’S NEXT</Eyebrow>
             <h2
@@ -79,7 +77,6 @@ export function Contact() {
             </Button>
           </div>
 
-          {/* Column 3: 3-row ventures quick-rail */}
           <ul className="w-full lg:w-auto lg:pt-7">
             {CONTACT_RAIL_ITEMS.map((item, idx) => (
               <li key={item.index}>

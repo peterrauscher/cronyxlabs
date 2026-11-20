@@ -12,7 +12,6 @@ export function Mission() {
     <section id="mission" aria-labelledby="mission-title" className="band-defer bg-cream py-16 lg:py-18">
       <Container>
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)] lg:gap-16">
-          {/* Left column: Philosophy & story link */}
           <div>
             <Eyebrow>OUR MISSION</Eyebrow>
 
@@ -36,7 +35,6 @@ export function Mission() {
             </ArrowLink>
           </div>
 
-          {/* Right column: Summit artwork card with overlaid motto */}
           <div>
             <div className="relative aspect-[12/5] overflow-hidden rounded-[10px]">
               <SummitScene />
